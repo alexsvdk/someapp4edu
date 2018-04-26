@@ -1,4 +1,4 @@
-package ru.temoteam.a1exs.someapp4edu
+package ru.temoteam.a1exs.todo
 
 import org.junit.Test
 

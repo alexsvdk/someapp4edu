@@ -1,4 +1,4 @@
-package ru.temoteam.a1exs.someapp4edu
+package ru.temoteam.a1exs.todo
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

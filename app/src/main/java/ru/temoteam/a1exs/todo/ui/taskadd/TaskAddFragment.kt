@@ -1,26 +1,24 @@
-package ru.temoteam.a1exs.someapp4edu.ui.taskview
+package ru.temoteam.a1exs.todo.ui.taskadd
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.arellomobile.mvp.MvpAppCompatFragment
 import com.arellomobile.mvp.presenter.InjectPresenter
 
-import ru.temoteam.a1exs.someapp4edu.R
-import ru.temoteam.a1exs.someapp4edu.ui.MainPresenter
+import ru.temoteam.a1exs.todo.R
 
-class TaskViewFragment : MvpAppCompatFragment(),TaskViewView {
+class TaskAddFragment : MvpAppCompatFragment(), TaskAddView {
 
     @InjectPresenter
-    lateinit var taskViewPresenter: TaskViewPresenter
+    lateinit var taskAddPresenter: TaskAddPresenter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task_view, container, false)
+        return inflater.inflate(R.layout.fragment_add_task, container, false)
     }
 
 

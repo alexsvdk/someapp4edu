@@ -1,4 +1,4 @@
-package ru.temoteam.a1exs.someapp4edu.ui
+package ru.temoteam.a1exs.todo.ui
 
 import com.arellomobile.mvp.MvpAppCompatFragment
 import com.arellomobile.mvp.MvpView

@@ -1,4 +1,4 @@
-package ru.temoteam.a1exs.someapp4edu.ui.tasks
+package ru.temoteam.a1exs.todo.ui.tasks
 
 import com.arellomobile.mvp.MvpView
 

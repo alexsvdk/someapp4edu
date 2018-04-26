@@ -1,10 +1,10 @@
-package ru.temoteam.a1exs.someapp4edu.ui
+package ru.temoteam.a1exs.todo.ui
 
 import android.os.Bundle
 import com.arellomobile.mvp.MvpAppCompatActivity
 import com.arellomobile.mvp.MvpAppCompatFragment
 import com.arellomobile.mvp.presenter.InjectPresenter
-import ru.temoteam.a1exs.someapp4edu.R
+import ru.temoteam.a1exs.todo.R
 
 
 class MainActivity : MvpAppCompatActivity(), MainView {
