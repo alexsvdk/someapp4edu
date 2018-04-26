@@ -6,10 +6,16 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.arellomobile.mvp.MvpAppCompatFragment
+import com.arellomobile.mvp.presenter.InjectPresenter
 
 import ru.temoteam.a1exs.someapp4edu.R
+import ru.temoteam.a1exs.someapp4edu.ui.MainPresenter
 
-class TaskViewFragment : Fragment() {
+class TaskViewFragment : MvpAppCompatFragment(),TaskViewView {
+
+    @InjectPresenter
+    lateinit var taskViewPresenter: TaskViewPresenter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {

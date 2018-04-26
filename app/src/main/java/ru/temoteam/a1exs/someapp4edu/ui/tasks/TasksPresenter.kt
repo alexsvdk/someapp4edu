@@ -1,4 +1,6 @@
 package ru.temoteam.a1exs.someapp4edu.ui.tasks
 
-class TasksPresenter: TasksMvpPresenter {
+import com.arellomobile.mvp.MvpPresenter
+
+class TasksPresenter: MvpPresenter<TasksView>() {
 }
