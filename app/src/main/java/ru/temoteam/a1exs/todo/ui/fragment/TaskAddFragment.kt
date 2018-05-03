@@ -10,8 +10,9 @@ import ru.temoteam.a1exs.todo.presentation.presenter.TaskAddPresenter
 
 import com.arellomobile.mvp.MvpFragment
 import com.arellomobile.mvp.presenter.InjectPresenter
+import ru.temoteam.a1exs.todo.ui.activity.MainActivity
 
-class TaskAddFragment : MvpFragment(), TaskAddView {
+class TaskAddFragment : BaseMvpFragment(), TaskAddView {
     companion object {
         const val TAG = "TaskAddFragment"
 

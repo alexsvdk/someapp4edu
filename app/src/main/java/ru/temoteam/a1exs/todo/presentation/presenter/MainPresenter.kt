@@ -2,6 +2,8 @@ package ru.temoteam.a1exs.todo.presentation.presenter
 
 import com.arellomobile.mvp.InjectViewState
 import com.arellomobile.mvp.MvpPresenter
+import ru.temoteam.a1exs.todo.R
+import ru.temoteam.a1exs.todo.data.FirebaseProvider
 import ru.temoteam.a1exs.todo.presentation.view.MainView
 import ru.temoteam.a1exs.todo.ui.fragment.TaskAddFragment
 import ru.temoteam.a1exs.todo.ui.fragment.TaskViewFragment
@@ -14,7 +16,15 @@ class MainPresenter : MvpPresenter<MainView>() {
     private val taskViewFragment by lazy {  TaskViewFragment() }
     private val taskAddFragment by lazy {  TaskAddFragment() }
 
+    fun switchFragment(id:Int){
+        viewState.selectFragment(when(id){
+            1 -> taskViewFragment
+            else -> tasksFragment
+        })
+    }
+
     init {
-        viewState.showFragment(tasksFragment)
+        switchFragment(0)
+        
     }
 }

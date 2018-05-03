@@ -29,7 +29,7 @@ class MainActivity : MvpAppCompatActivity(), MainView {
         setContentView(R.layout.activity_main)
     }
 
-    override fun showFragment(fragment: MvpFragment) {
+    override fun selectFragment(fragment: MvpFragment) {
         fragmentManager.beginTransaction().replace(R.id.container,fragment).commit()
     }
 }

@@ -11,7 +11,7 @@ import ru.temoteam.a1exs.todo.presentation.presenter.TaskViewPresenter
 import com.arellomobile.mvp.MvpFragment
 import com.arellomobile.mvp.presenter.InjectPresenter
 
-class TaskViewFragment : MvpFragment(), TaskViewView {
+class TaskViewFragment : BaseMvpFragment(), TaskViewView {
     companion object {
         const val TAG = "TaskViewFragment"
 
